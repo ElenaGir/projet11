@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    /* font-family: 'Cinzel', serif; */
+/* body{
     font-family: 'Karla', sans-serif;
+} */
+#anecdotes{
+    background-color: #503E3C;
+}
+.cinzel{
+    font-family: 'Cinzel', serif;
 }
 #formulaire{
     background-color: #F7F7F7;
 }
 footer{
     background-color: #503E3C;
+    font-family:'Cinzel', serif;
 }
 input[type=submit]{
     background-color: #2B0B05;
