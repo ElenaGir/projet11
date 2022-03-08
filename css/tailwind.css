@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Karla', sans-serif;
+}
+#formulaire{
+    background-color: #F7F7F7;
+}
+footer{
+    background-color: #503E3C;
+}
+input[type=submit]{
+    background-color: #2B0B05;
+}
+form{
+    flex-direction: column;
+}

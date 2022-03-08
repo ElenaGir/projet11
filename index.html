@@ -4,10 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shuffle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./build/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f5e209f987.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1 class="text-blue-100">Hello</h1>
+<body class="w-screen h-screen">
+    <header></header>
+    <main class="w-full">
+        <section id="propos"></section>
+        <section id="specialites"></section>
+        <section id="cafes"></section>
+        <section id="anecdotes"></section>
+        <section id="desserts"></section>
+        <section id="formulaire" class="flex flex-col-reverse h-screen justify-between items-center">
+            <img src="./images/cafetiere.jpg" alt="caf">
+            <form method="post" class="w-screen flex justify-center items-center">
+                <h2 class="font-bold text-3xl pb-5">CONTACTEZ-NOUS</h2>
+                <div class="w-5/6">
+                    <input class="w-full h-14 border pl-2" placeholder="Entrez votre Nom" name="nom" type="text" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
+                    <p class="invisible">Error</p>
+                </div>
+                <div class="w-5/6">
+                    <input class="w-full h-14 border pl-2" placeholder="Entez une adresse email valide" name="email" type="email" pattern="[a-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$" required>
+                    <p class="invisible">Error</p>
+                </div>
+                <textarea class="w-5/6 h-60 border pl-2 pt-2" placeholder="Entrez votre message" name="message" required></textarea>
+                <div>
+                    <p class="invisible">bravo</p>
+                    <input class="text-white px-6 py-2 text-xl" type="submit" value="Envoyer">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="w-screen h-3/6">
+        <section>
+            <div class="flex">
+                <i class="fa-brands fa-github"></i>
+                <p>ELENAGIR</p>
+            </div>
+            <div class="flex">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>ELENA-GIRARD</p>
+            </div>
+            <hr>
+            <div class="flex">
+                <i class="fa-brands fa-github"></i>
+                <p>OGUST25</p>
+            </div>
+            <div class="flex">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>AUGUST-GROS</p>
+            </div>
+        </section>
+        <section class="flex">
+            <img class="w-2/4" src="./images/coeur.png" alt="grains de café en form de coeur">
+            <ul>
+                <li>Plan :</li>
+                <li>A PROPOS</li>
+                <li>SPECIALITES</li>
+                <li>NOS CAFES</li>
+                <li>NOS DESSERTS</li>
+                <li>CONTACT</li>
+            </ul>
+        </section>
+        <section>
+            <p>Contact :</p>
+            <div class="flex">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>144 Av. des Champs-Élysées<br>75008 Paris</p>
+            </div>
+            <div class="flex">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>06.45.25.31.25</p>
+            </div>
+            <div class="flex">
+                <i class="fa-solid fa-envelope"></i>
+                <p>shuffle@hello.fr</p>
+            </div>
+        </section>
+
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
