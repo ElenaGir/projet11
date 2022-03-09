@@ -17,7 +17,153 @@
     <main class="w-full">
         <section id="propos"></section>
         <section id="specialites"></section>
-        <section id="cafes"></section>
+
+        <!-- Carouselle Cafés -->
+        <section id="cafes">
+            <h2 class="cinzel text-xl p-4">Nos cafés</h2>
+            <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <!-- Espresso -->
+                    <div class="carousel-item active relative float-left w-full">
+                        <img
+                        src="./images/cafés/espresso.png"
+                        class="block w-full"
+                        alt="espresso"
+                        />
+                        <p class="text-center cinzel pt-2">Espresso</p>
+                        <p class="text-center cinzel pb-2">5€</p>
+                    </div>
+                    <!-- Americano -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/americano.png"
+                        class="block w-full"
+                        alt="americano"
+                        />
+                        <p class="text-center cinzel pt-2">Americano</p>
+                        <p class="text-center cinzel pb-2">8€</p>
+                    </div>
+                    <!-- Latte -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/latte.png"
+                        class="block w-full"
+                        alt="latte"
+                        />
+                        <p class="text-center cinzel pt-2">Latte</p>
+                        <p class="text-center cinzel pb-2">10€</p>
+                    </div>
+                    <!-- Cappuchino -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/cappuchino.png"
+                        class="block w-full"
+                        alt="cappuchino"
+                        />
+                        <p class="text-center cinzel pt-2">Cappuchino</p>
+                        <p class="text-center cinzel pb-2">12€</p>
+                    </div>
+                    <!-- Macchiato -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/macchiato.png"
+                        class="block w-full"
+                        alt="macchiato"
+                        />
+                        <p class="text-center cinzel pt-2">Macchiato</p>
+                        <p class="text-center cinzel pb-2">12€</p>
+                    </div>
+                    <!-- Moccacino -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/moccacino.png"
+                        class="block w-full"
+                        alt="moccacino"
+                        />
+                        <p class="text-center cinzel pt-2">Moccacino</p>
+                        <p class="text-center cinzel pb-2">13€</p>
+                    </div>
+                    <!-- Flate White -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/flat_white.png"
+                        class="block w-full"
+                        alt="flat white"
+                        />
+                        <p class="text-center cinzel pt-2">Flat White</p>
+                        <p class="text-center cinzel pb-2">13€</p>
+                    </div>
+                    <!-- Corretto -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/corretto.png"
+                        class="block w-full"
+                        alt="corretto"
+                        />
+                        <p class="text-center cinzel pt-2">Corretto</p>
+                        <p class="text-center cinzel pb-2">11€</p>
+                    </div>
+                    <!-- Café Glacé -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/cafe_glace.png"
+                        class="block w-full"
+                        alt="café glacé"
+                        />
+                        <p class="text-center cinzel pt-2">Café glacé</p>
+                        <p class="text-center cinzel pb-2">14€</p>
+                    </div>
+                    <!-- Frappé -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/frappe.png"
+                        class="block w-full"
+                        alt="Frappé"
+                        />
+                        <p class="text-center cinzel pt-2">Frappé</p>
+                        <p class="text-center cinzel pb-2">14€</p>
+                    </div>
+                    <!-- RAF -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/RAF.png"
+                        class="block w-full"
+                        alt="RAF"
+                        />
+                        <p class="text-center cinzel pt-2">RAF</p>
+                        <p class="text-center cinzel pb-2">14€</p>
+                    </div>
+                    <!-- Irish -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img
+                        src="./images/cafés/irish.png"
+                        class="block w-full"
+                        alt="irish"
+                        />
+                        <p class="text-center cinzel pt-2">Irish</p>
+                        <p class="text-center cinzel pb-2">15€</p>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                    >
+                    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+                >
+                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
         <!-- Anecdotes -->
         <section id="anecdotes" class="w-screen p-10 text-lg text-white">
