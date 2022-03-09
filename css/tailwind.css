@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-header {
+    background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+   
+   
+  }
+  #specialites{
+
+    background: url("../assets_images/specialites.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+ 
+  }
+  #cafes{
+      height: 100vh;
+  }
+ 
+

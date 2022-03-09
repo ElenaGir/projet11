@@ -5,9 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./build/tailwind.css">
 </head>
-<body>
-    <h1 class="text-blue-100">Hello</h1>
+<body> 
+    <header class="bg-header  flex-col items-center justify-center h-screen">
+        <nav class=" fixed container flex justify-between px-12 py-8 mx-auto bg-hidden text-white">
+            <div>
+              <h3 class="text-2xl font-medium text-white">Shuffle café</h3>
+            </div>
+            <div class="hidden space-x-8 lg:flex text-white">
+              <a href="#">A PROPOS</a>
+              <a href="#">SPCIALITES</a>
+              <a href="#">NOS CAFES</a>
+              <a href="#">NOS DESSERTS</a>
+              <a href="#">CONTACT</a>
+            </div>
+            <div class="flex lg:hidden">
+              <div class="space-y-2">
+                <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
+                <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
+                <span class="block w-8 h-0.5 bg-white animate-pulse"></span>
+              </div>
+            </div>
+          </nav>
+        <div class="flex  h-screen items-center justify-center bg-hidden font-serif mx-4  text-center">
+
+          <h1 class="text-4xl uppercase text-white">
+            <p class="">WELCOME TO </p>
+            <p>THE SHUFFLE</p>
+          </h1>
+        
+        </div>
+
+      </header>
+      
+     <main> 
+        <section id="propos" class="
+        sm-
+        flex 
+        flex-col
+        justify-center
+        items-center
+        font-serif 
+        leading-normal 
+        ">
+            <p>A propos</p>
+            <p>The Shuffle</p>
+            <p class="w-5/6">Certains pensent qu'on ne changera pas le monde...Nous si. 
+                Et avec l'acte le plus quotidien du monde : en buvant le café!
+                Nos cafés 100% biologique des meilleurs producteurs du monde.
+                Nos pâtisseries 100% fait maison avec les ingrédients français. 
+                Les amateurs du régime sans sucre et sans lactose trouverons aussi leur bonheur. 
+                Ainsi vous régalant, vous réalisez un acte de bienveillance pour vous et pour la planète.</p>
+            
+            <img class="w-7/8 p-8" src="./assets_images/image_a_propos.jpg" alt="" /> 
+        </section>
+
+        <section id="specialites" class=" 
+        h-full
+        flex 
+        flex-col
+        justify-center
+        items-center
+        font-serif 
+        text-white">
+
+            <p>SPECIALITES</p>
+            <P>Kopi Luwak (Indonésie)</P>
+            <P>Blue Mountain (Jamaïque)</P>
+            <P>Kona Coffee (Hawaï)</P>
+            <P>Le Bourbon Pointu (La Réunion)</P>
+            </section>
+        <section id="cafes" class="">
+            NOS CAFES
+        </section>
+    
+        <section id="anecdotes"></section>
+        <section id="desserts"></section>
+        <section id="formulaire"></section> 
+
+    </main> 
+    <footer>
+
+    </footer>
 </body>
 </html>
