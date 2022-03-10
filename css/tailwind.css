@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body{
+body{
     font-family: 'Karla', sans-serif;
-} */
+}
+
+#specialites{
+    background: url(../images/coffee_red_table.jpg) no-repeat;
+}
 #anecdotes{
     background-color: #503E3C;
 }
@@ -23,4 +27,7 @@ input[type=submit]{
 }
 form{
     flex-direction: column;
+}
+.shadow-custom{
+    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
 }
