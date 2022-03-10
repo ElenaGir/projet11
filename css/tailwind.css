@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-header {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Karla&family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
+
+.img {
     background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
     background-attachment: fixed;
     background-size: cover;
  
-   
-   
+    
   }
   #specialites{
 
@@ -21,5 +23,23 @@
   #cafes{
       height: 100vh;
   }
- 
+  .cinzel{
+      font-family: 'Cinzel';
+  }
+ .karla{
+       font-family: 'Karla';
+ }
 
+
+ .hero-wrapper video {
+  width: 100%;
+  max-width: 100%;
+}
+.stretch {
+  height: auto;
+  background: #Ffff;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  margin-top: 800px;
+}

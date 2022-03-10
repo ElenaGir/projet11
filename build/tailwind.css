@@ -506,14 +506,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.-z-50 {
+  z-index: -50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .block {
@@ -532,6 +541,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -540,12 +553,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-8 {
@@ -554,6 +563,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-5\/6 {
   width: 83.333333%;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 @-webkit-keyframes pulse {
@@ -606,22 +619,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .font-serif {
@@ -631,11 +644,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-medium {
@@ -655,7 +663,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.bg-header {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Karla&family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
+
+.img {
   background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -672,7 +684,66 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.cinzel{
+  font-family: 'Cinzel';
+}
+
+.karla{
+  font-family: 'Karla';
+}
+
+.hero-wrapper video {
+  width: 100%;
+  max-width: 100%;
+}
+
+.stretch {
+  height: auto;
+  background: #Ffff;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  margin-top: 800px;
+}
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:mx-28 {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -680,6 +751,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:hidden {
     display: none;
   }
-}
- 
 
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
