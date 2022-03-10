@@ -25,21 +25,29 @@
             <h2 class="text-center text-xl p-4">Back Office</h2>
         </div>
     </header>
-    <main class="shadow-custom 5w-full flex flex-wrap justify-center">
-        <!-- Boite + -->
-        <div id="boxBOAdd" class="w-64 h-64 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
-            <div class="w-32 h-32 border rounded-full flex justify-center items-center text-5xl"><i class="text-gray-400 fa-solid fa-plus"></i></div>
+    <main class="shadow-custom 5w-full ">
+        <div id="boxMain" class="flex flex-wrap justify-center">
+            <!-- Boite + -->
+            <div id="boxBOAdd" class="w-64 h-64 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
+                <div id="btnAdd" class="w-32 h-32 border-8 rounded-full flex justify-center items-center text-5xl hover:bg-slate-100 cursor-pointer"><i class="text-gray-400 fa-solid fa-plus"></i></div>
+            </div>
+            <!-- Boites -->
+            <div id="boxBO" class="w-64 h-64 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
+                <img src="./images/cafés/espresso.png" alt="image" class="rounded-full w-24 h-24 border-2 border-white">
+                <div>
+                    <p>Café de ouf</p>
+                    <p>5€</p>
+                    <button class="border mt-2 mr-2 px-4 py-2 rounded-md hover:bg-slate-100">Modifier</button>
+                    <button class="border px-4 py-2 rounded-md hover:bg-slate-100">Supprimer</button>               
+                </div>
+            </div>            
         </div>
-        <!-- Boites -->
-        <div id="boxBO" class="w-64 h-64 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
-            <img src="./images/cafés/espresso.png" alt="image" class="rounded-full w-24 h-24 border-4 border-white">
-            <div>
-                <p>Café de ouf</p>
-                <p>5€</p>
-                <button class="border mt-2 mr-2 px-4 py-2 rounded-md">Modifier</button>
-                <button class="border px-4 py-2 rounded-md">Supprimer</button>               
+        <div id="test" class="hidden justify-center">
+            <div id="boxBO" class="w-64 h-96 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
+                
             </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
