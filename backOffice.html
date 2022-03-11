@@ -17,8 +17,8 @@
         <nav class="h-20 flex justify-between items-center text-center shadow-md">
             <h1 class="p-5 text-xl">Shuffle</h1>
             <div class="flex justify-evenly">
-                <p class="p-3 text-lg">Cafés</p>
-                <p class="p-3 text-lg">Desserts</p>
+                <button class="p-3 text-lg">Cafés</button>
+                <button class="p-3 text-lg">Desserts</button>
             </div>
         </nav>
         <div>
@@ -37,8 +37,8 @@
                 <div>
                     <p>Café de ouf</p>
                     <p>5€</p>
-                    <button class="border mt-2 mr-2 px-4 py-2 rounded-md hover:bg-slate-100">Modifier</button>
-                    <button class="border px-4 py-2 rounded-md hover:bg-slate-100">Supprimer</button>               
+                    <button class="shadow-md border mt-2 mr-2 px-4 py-1 rounded-md hover:bg-slate-100">Modifier</button>
+                    <button class="shadow-md border px-4 py-1 rounded-md hover:bg-slate-100">Supprimer</button>               
                 </div>
             </div>            
         </div>
@@ -47,10 +47,17 @@
                     <div id="preview">
                         <div id="boxFile" class="rounded-full w-24 h-24 border-2 border-white bg-white"></div>
                     </div>
-                    <input id="fileAdd" type="file" name="img" accept=".png,.jpg,.jpeg,.svg">
-                    <input type="text" name="nom" placeholder="Nom">
-                    <input type="text" name="prix" placeholder="Prix">
-                    <button>Valider</button>
+                    <div class="h-16 w-40 rounded-lg border-2 bg-gray-100 flex justify-center items-center">
+                        <label for="fileAdd" class="flex items-center justify-center">
+                            <i class="pr-2 fa fa-folder-open fa-2x"></i>
+                            <span class="block text-gray-400 font-normal">Upload Image</span>  
+                        </label>
+                        <input id="fileAdd" type="file" class="opacity-0 absolute top-0 name="imgBO" accept=".png,.jpg,.jpeg,.svg">
+                    </div>
+                    <!-- <input id="fileAdd" type="file" name="img" accept=".png,.jpg,.jpeg,.svg"> -->
+                    <input class="border rounded placeholder:pl-2 pl-2" type="text" name="nom" placeholder="Nom">
+                    <input class="border rounded placeholder:pl-2 pl-2" type="text" name="prix" placeholder="Prix">
+                    <button class="border rounded shadow-md px-4 py-1">Valider</button>
                 </form>
             </div>
         </div>

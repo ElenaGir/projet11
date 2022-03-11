@@ -716,6 +716,10 @@ form{
   background-size: cover;
 }
 
+.fa-folder-open{
+  color: #D6A581;
+}
+
 .hover\:no-underline:hover {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
