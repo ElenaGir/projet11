@@ -16,9 +16,15 @@
     <header class="w-full flex flex-col">
         <nav class="h-20 flex justify-between items-center text-center shadow-md">
             <h1 class="p-5 text-xl">Shuffle</h1>
-            <div class="flex justify-evenly">
-                <button class="p-3 text-lg">Cafés</button>
-                <button class="p-3 text-lg">Desserts</button>
+            <div class="flex justify-evenly"><!-- class="opacity-0 absolute top-0 w-0 h-0" -->
+                <input id="btnCaf" class="checked:bg-slate-200" type="radio" name="menu" checked></input>
+                <label class="checked:bg-slate-200" for="btnCaf">
+                    <p class="p-3 text-lg">Cafés</p>
+                </label>
+                <input id="btnDes" type="radio" name="menu"></input>
+                <label class="checked:bg-slate-200" for="btnDes">
+                    <p class="p-3 text-lg">Desserts</p>
+                </label>
             </div>
         </nav>
         <div>
