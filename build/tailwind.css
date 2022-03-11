@@ -544,10 +544,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -715,7 +711,7 @@ form{
   box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-#boxBO{
+#boxBO, .bg-custom{
   background-image: url("../images/background_bo.png");
   background-size: cover;
 }
