@@ -508,6 +508,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.float-right {
+  float: right;
+}
+
 .float-left {
   float: left;
 }
@@ -665,6 +669,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-600 {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-no-repeat {
@@ -831,24 +844,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: cover;
 }
 
-#cafes{
-  height: 100vh;
-}
-
-.hero-wrapper video {
-  width: 100%;
-  max-width: 100%;
-}
-
-.stretch {
-  height: auto;
-  background: #Ffff;
-  min-height: 100%;
-  min-width: 100%;
-  background-size: cover;
-  margin-top: 400px;
-}
-
 #anecdotes{
   background-color: #503E3C;
 }
@@ -872,10 +867,6 @@ footer{
 
 input[type=submit]{
   background-color: #2B0B05;
-}
-
-form{
-  flex-direction: column;
 }
 
 .shadow-custom{
@@ -971,6 +962,18 @@ form{
     height: 24rem;
   }
 
+  .md\:h-1\/2 {
+    height: 50%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -990,8 +993,24 @@ form{
     display: none;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:items-center {

@@ -15,11 +15,11 @@
 </head>
 
 <body>
-    <header class="bg-header  flex-col justify-center h-full xl:h-full  sm:h-28 ">
+    <header class="bg-header  flex-col justify-center h-screen items-center md:h-1/2 xl:h-screen ">
         <!-- background img/video -->
-        <section class="hero-wrapper -z-50 min-w-full min-h-full sm:bg-hidden h-full sm:h-40 fixed">
+        <section class="hero-wrapper -z-50 w-screen sm:bg-hidden h-screen  fixed">
             <div class="img h-full sm:hidden"></div>
-            <div class=" hidden sm:flex"> <video loop muted="muted " autoplay>
+            <div class=" hidden sm:flex "> <video loop muted="muted " autoplay>
                     <source src="./assets/images/video_cafe.mp4" />
                 </video>
             </div>
@@ -43,7 +43,7 @@
                 </button>
             </div>
 
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden  pt-6 lg:pt-0"
                 id="nav-content">
                 <ul class="list-reset lg:flex justify-end flex-1 items-center">
                     <!-- <li class="mr-3">
@@ -76,7 +76,7 @@
         </nav>
         <!-- ...... -->
 
-        <div class="flex h-screen xl:h-screen md:h-96 items-center  bg-hidden font-serif ">
+        <div class="flex h-full xl:h-full md:h-96 items-center  bg-hidden font-serif ">
             <h1 class="mx-5 text-2xl sm:text-3xl md:text-5xl xl:text-8xl uppercase text-white cinzel">
                 <p class="">Welcome to </p>
                 <p class="p-4 mx-2 md:mx-28 ">THE SHUFFLE</p>
@@ -84,10 +84,12 @@
         </div>
 
     </header>
-    <main class="stretch">
+
+    <main class=" bg-white min-h-full  min-w-full bg-cover">
 
         <!-- A Propos -->
         <section id="propos" class="
+        h-full
         karla
         md:flex
         flex-row
@@ -134,12 +136,12 @@
         </section>
 
         <!-- Carouselle Cafés -->
-        <section id="cafes">
+        <section id="cafes" class="h-full">
             <h2 class="cinzel text-xl p-4">Nos cafés</h2>
             <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
-                <div class="carousel-inner relative w-full overflow-hidden">
+                <div class="carousel-inner relative w-full h-full overflow-hidden">
                     <!-- Espresso -->
-                    <div class="carousel-item active relative float-left w-full">
+                    <div class="carousel-item active relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/espresso.png"
                         class="block w-full"
@@ -149,7 +151,7 @@
                         <p class="text-center cinzel pb-2">5€</p>
                     </div>
                     <!-- Americano -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item md:active:first-line relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/americano.png"
                         class="block w-full"
@@ -159,7 +161,7 @@
                         <p class="text-center cinzel pb-2">8€</p>
                     </div>
                     <!-- Latte -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/latte.png"
                         class="block w-full"
@@ -169,7 +171,7 @@
                         <p class="text-center cinzel pb-2">10€</p>
                     </div>
                     <!-- Cappuchino -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/cappuchino.png"
                         class="block w-full"
@@ -179,7 +181,7 @@
                         <p class="text-center cinzel pb-2">12€</p>
                     </div>
                     <!-- Macchiato -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/macchiato.png"
                         class="block w-full"
@@ -189,7 +191,7 @@
                         <p class="text-center cinzel pb-2">12€</p>
                     </div>
                     <!-- Moccacino -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/moccacino.png"
                         class="block w-full"
@@ -199,7 +201,7 @@
                         <p class="text-center cinzel pb-2">13€</p>
                     </div>
                     <!-- Flate White -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/flat_white.png"
                         class="block w-full"
@@ -209,9 +211,9 @@
                         <p class="text-center cinzel pb-2">13€</p>
                     </div>
                     <!-- Corretto -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
-                        src="./assets1/images/cafés/corretto.png"
+                        src="./assets/images/cafés/corretto.png"
                         class="block w-full"
                         alt="corretto"
                         />
@@ -219,7 +221,7 @@
                         <p class="text-center cinzel pb-2">11€</p>
                     </div>
                     <!-- Café Glacé -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/cafe_glace.png"
                         class="block w-full"
@@ -229,7 +231,7 @@
                         <p class="text-center cinzel pb-2">14€</p>
                     </div>
                     <!-- Frappé -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/frappe.png"
                         class="block w-full"
@@ -239,7 +241,7 @@
                         <p class="text-center cinzel pb-2">14€</p>
                     </div>
                     <!-- RAF -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/RAF.png"
                         class="block w-full"
@@ -249,7 +251,7 @@
                         <p class="text-center cinzel pb-2">14€</p>
                     </div>
                     <!-- Irish -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/irish.png"
                         class="block w-full"
@@ -281,10 +283,10 @@
         </section>
 
         <!-- Anecdotes -->
-        <section id="anecdotes" class="w-screen p-10 text-lg text-white">
+        <section id="anecdotes" class="w-full p-10 text-lg text-white text-justify">
             <div class="flex items-center">
                 <img src="./assets/images/coffee.svg" alt="cafe">
-                <h2 class="cinzel text-2xl">Le saviez-vous ?</h2>
+                <h2 class="cinzel text-2xl text-justify">Le saviez-vous ?</h2>
             </div>
             <p>Le café est la deuxième marchandise la plus échangée dans le monde derrière le pétrole.</p>
             <p>Le café a un impact positif sur la mémoire à court terme, psychotechnique ainsi que sur le QI. Des études scientifiques ont mis en évidence une corrélation entre ces effets positifs et la quantité consommée de café.</p>
@@ -293,12 +295,12 @@
         </section>
 
         <!-- Carouselle Desserts -->
-        <section id="desserts">
+        <section id="desserts" class="h-full">
             <h2 class="cinzel text-xl p-4">Nos desserts</h2>
             <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
                 <div class="carousel-inner relative w-full overflow-hidden">
                     <!-- Gateaux -->
-                    <div class="carousel-item active relative float-left w-full">
+                    <div class="carousel-item active relative float-left w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/desserts/gateaux.png"
                         class="block w-full"
@@ -308,7 +310,7 @@
                         <p class="text-center cinzel pb-2">10€</p>
                     </div>
                     <!-- Glace -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/desserts/glace.png"
                         class="block w-full"
@@ -318,7 +320,7 @@
                         <p class="text-center cinzel pb-2">12€</p>
                     </div>
                     <!-- Macaron -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/desserts/macaron.png"
                         class="block w-full"
@@ -328,7 +330,7 @@
                         <p class="text-center cinzel pb-2">4€</p>
                     </div>
                     <!-- Tiramisu -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/desserts/tiramisu.png"
                         class="block w-full"
@@ -338,7 +340,7 @@
                         <p class="text-center cinzel pb-2">11€</p>
                     </div>
                     <!-- Muffin -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/desserts/muffin.png"
                         class="block w-full"
@@ -348,7 +350,7 @@
                         <p class="text-center cinzel pb-2">11€</p>
                     </div>
                     <!-- Tarte -->
-                    <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/desserts/tarte.png"
                         class="block w-full"
@@ -380,29 +382,29 @@
         </section>
 
         <!-- Formulaire -->
-        <section id="formulaire" class="flex flex-col-reverse h-screen justify-evenly items-center">
-            <img src="./assets/images/cafetiere.jpg" alt="caf">
-            <form method="post" class="w-screen flex justify-center items-center">
+        <section id="formulaire" class=" w-screen flex flex-col-reverse lg:flex-row h-full  items-center">
+            <img class="lg:w-1/2 h-full float-left" src="./assets/images/bg_form.svg" alt="caf">
+            <form method="post" class="p-10 w-full flex-col  md:w-3/4 flex justify-center ">
                 <h2 class="font-bold text-3xl pb-5">CONTACTEZ-NOUS</h2>
-                <div class="w-5/6">
-                    <input class="w-full h-14 border pl-2" placeholder="Entrez votre Nom" name="nom" type="text" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
+                <div class="">
+                    <input class="w-full h-14 border p-4" placeholder="Entrez votre Nom" name="nom" type="text" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
                     <p class="invisible">Error</p>
                 </div>
-                <div class="w-5/6">
+                <div class="">
                     <input class="w-full h-14 border pl-2" placeholder="Entez une adresse email valide" name="email" type="email" pattern="[a-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$" required>
                     <p class="invisible">Error</p>
                 </div>
-                <textarea class="w-5/6 h-60 border pl-2 pt-2" placeholder="Entrez votre message" name="message" required></textarea>
+                <textarea class=" w-full h-60 border pl-2 pt-2" placeholder="Entrez votre message" name="message" required></textarea>
                 <div>
                     <p class="invisible">bravo</p>
-                    <input class="text-white px-6 py-2 text-xl" type="submit" value="Envoyer">
+                    <input class="text-white px-6 py-2 text-xl float-right" type="submit" value="Envoyer">
                 </div>
             </form>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="w-screen h-screen flex flex-col justify-between px-10 py-7 text-white text-lg sm:flex-wrap sm:flex-row">
+    <footer class="w-screen h-full flex flex-col justify-between px-10 py-7 text-white text-lg sm:flex-wrap sm:flex-row">
         <section>
             <div class="flex items-center py-1">
                 <i class="fa-brands fa-github pr-2 text-2xl"></i>
