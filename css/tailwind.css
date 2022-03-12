@@ -4,14 +4,14 @@
 
 #specialites{
 
-    background: url("../assets_images/specialites.jpg") center no-repeat;
+    background: url("../assets/images/specialites.jpg") center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 
 }
 .img {
-    background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
+    background: url("../assets/images/tasse_cafe_table.jpg") center no-repeat;
     background-attachment: fixed;
     background-size: cover;  
 }
@@ -56,7 +56,7 @@ form{
     box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
 }
 #boxBO, .bg-custom{
-    background-image: url("../images/background_bo.png");
+    background-image: url("../assets/images/background_bo.png");
     background-size: cover;
 }
 .fa-folder-open{

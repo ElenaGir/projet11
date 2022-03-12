@@ -819,14 +819,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 #specialites{
-  background: url("../assets_images/specialites.jpg") center no-repeat;
+  background: url("../assets/images/specialites.jpg") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
 }
 
 .img {
-  background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
+  background: url("../assets/images/tasse_cafe_table.jpg") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -883,7 +883,7 @@ form{
 }
 
 #boxBO, .bg-custom{
-  background-image: url("../images/background_bo.png");
+  background-image: url("../assets/images/background_bo.png");
   background-size: cover;
 }
 
