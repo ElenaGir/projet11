@@ -2,44 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Karla&family=Lato&family=Quicksand&family=Roboto&family=Space+Mono:wght@700&display=swap');
-
-.img {
-    background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
- 
-    
-  }
-  #specialites{
+#specialites{
 
     background: url("../assets_images/specialites.jpg") center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
- 
-  }
-  #cafes{
-      height: 100vh;
-  }
-  .cinzel{
-      font-family: 'Cinzel';
-  }
- .karla{
-       font-family: 'Karla';
- }
 
-
- .hero-wrapper video {
-  width: 100%;
-  max-width: 100%;
+}
+.img {
+    background: url("../assets_images/tasse_cafe_table.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+#cafes{
+    height: 100vh;
+}
+.hero-wrapper video {
+    width: 100%;
+    max-width: 100%;
 }
 .stretch {
-  height: auto;
-  background: #Ffff;
-  min-height: 100%;
-  min-width: 100%;
-  background-size: cover;
-  margin-top: 400px;
+    height: auto;
+    background: #Ffff;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    margin-top: 400px;
+}
+#anecdotes{
+    background-color: #503E3C;
+}
+.cinzel{
+    font-family: 'Cinzel', serif;
+}
+.karla{
+    font-family: 'Karla', serif;
+}
+#formulaire{
+    background-color: #F7F7F7;
+}
+footer{
+    background-color: #503E3C;
+    font-family:'Cinzel', serif;
+}
+input[type=submit]{
+    background-color: #2B0B05;
+}
+form{
+    flex-direction: column;
+}
+.shadow-custom{
+    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
+}
+#boxBO, .bg-custom{
+    background-image: url("../images/background_bo.png");
+    background-size: cover;
+}
+.fa-folder-open{
+    color: #D6A581;
 }
