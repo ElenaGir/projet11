@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shuffle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./build/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
@@ -13,14 +13,123 @@
     <script src="https://kit.fontawesome.com/f5e209f987.js" crossorigin="anonymous"></script>
 </head>
 <body class="w-screen h-screen sm:bg-blue-400 md:bg-red-600 lg:bg-green-500 xl:bg-yellow-500 2xl:bg-purple-500">
-    <header></header>
-    <main class="w-full">
+    <header class="bg-header  flex-col justify-center h-full xl:h-full  sm:h-28 ">
+        <!-- background img/video -->
+        <section class="hero-wrapper -z-50 min-w-full min-h-full sm:bg-hidden h-full sm:h-40 fixed">
+            <div class="img h-full sm:hidden"></div>
+            <div class=" hidden sm:flex"> <video loop muted="muted " autoplay>
+                    <source src="./assets_images/video_cafe.mp4" />
+                </video>
+            </div>
+        </section>
+
+        <!-- barre nav -->
+        <nav class="flex items-center justify-between flex-wrap bg-hidden p-6 fixed w-full z-10 top-0">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+                    <span class="text-2xl pl-2"><i class="em em-grinning"></i>Shuffle café</span>
+                </a>
+            </div>
+
+            <div class="block lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2  text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                    <svg class="fill-current h-8 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <!-- <li class="mr-3">
+                  <a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+                </li> -->
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                            href="#propos">A PROPOS</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                            href="#">SPCIALITES</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                            href="#">NOS CAFES</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                            href="#">NOS DESSERTS</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                            href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <!-- ...... -->
+
+        <div class="flex h-screen xl:h-screen md:h-96 items-center  bg-hidden font-serif ">
+            <h1 class="mx-5 text-2xl sm:text-3xl md:text-5xl xl:text-8xl uppercase text-white cinzel">
+                <p class="">Welcome to </p>
+                <p class="p-4 mx-2 md:mx-28 ">THE SHUFFLE</p>
+            </h1>
+        </div>
+
+    </header>
+    <main class="stretch">
 
         <!-- A Propos -->
-        <section id="propos"></section>
+        <section id="propos" class="
+        karla
+        md:flex
+        flex-row
+        justify-center
+        ">
+            <div class=" flex-col   m-8">
+                <div class="text-2xl xl:text-5xl">
+                    <p>A propos</p>
+                    <p>The Shuffle</p>
+                </div>
+                <div>
+                    <p class="text-justify italic w-5/6 text-lg xl:text-2xl">Certains pensent qu'on ne changera pas le
+                        monde...Nous si.
+                        Et avec l'acte le plus quotidien du monde : en buvant le café!
+                        Nos cafés 100% biologique des meilleurs producteurs du monde.
+                        Nos pâtisseries 100% fait maison avec les ingrédients français.
+                        Les amateurs du régime sans sucre et sans lactose trouverons aussi leur bonheur.
+                        Ainsi vous régalant, vous réalisez un acte de bienveillance pour vous et pour la planète.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img class=" p-8" src="./assets_images/image_a_propos.jpg" alt="" />
+            </div>
+
+        </section>
 
         <!-- Spécialités -->
-        <section id="specialites"></section>
+        <section id="specialites" class=" 
+        h-full
+        flex 
+        flex-col
+        justify-center
+        items-center
+        font-serif 
+        text-white">
+
+            <p>SPECIALITES</p>
+            <P>Kopi Luwak (Indonésie)</P>
+            <P>Blue Mountain (Jamaïque)</P>
+            <P>Kona Coffee (Hawaï)</P>
+            <P>Le Bourbon Pointu (La Réunion)</P>
+        </section>
 
         <!-- Carouselle Cafés -->
         <section id="cafes">
