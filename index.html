@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <header class="bg-header  flex-col justify-center h-screen items-center md:h-1/2 xl:h-screen ">
+    <header class="bg-header  flex-col justify-center h-screen items-center sm:h-5/6 xl:h-screen ">
         <!-- background img/video -->
         <section class="hero-wrapper -z-50 w-screen sm:bg-hidden h-screen  fixed">
-            <div class="img h-full sm:hidden"></div>
+            <div class="backgr img  h-full sm:hidden"></div>
             <div class=" hidden sm:flex "> <video loop muted="muted " autoplay>
                     <source src="./assets/images/video_cafe.mp4" />
                 </video>
@@ -76,7 +76,7 @@
         </nav>
         <!-- ...... -->
 
-        <div class="flex h-full xl:h-full md:h-96 items-center  bg-hidden font-serif ">
+        <div class="flex h-full xl:h-full sm:h-96 items-center  bg-hidden font-serif ">
             <h1 class="mx-5 text-2xl sm:text-3xl md:text-5xl xl:text-8xl uppercase text-white cinzel">
                 <p class="">Welcome to </p>
                 <p class="p-4 mx-2 md:mx-28 ">THE SHUFFLE</p>
@@ -85,7 +85,7 @@
 
     </header>
 
-    <main class=" bg-white min-h-full  min-w-full bg-cover">
+    <main class=" bg-white min-h-full  min-w-full bg-cover w-screen">
 
         <!-- A Propos -->
         <section id="propos" class="
@@ -94,14 +94,17 @@
         md:flex
         flex-row
         justify-center
+        w-full
+        items-center
         ">
-            <div class=" flex-col   m-8">
-                <div class="text-2xl xl:text-5xl">
+            <div class=" flex flex-col p-8 justify-center items-center">
+                <div class="text-2xl xl:text-5xl ">
                     <p>A propos</p>
                     <p>The Shuffle</p>
                 </div>
+                
                 <div>
-                    <p class="text-justify italic w-5/6 text-lg xl:text-2xl">Certains pensent qu'on ne changera pas le
+                    <p class="text-justify italic text-lg xl:text-2xl">Certains pensent qu'on ne changera pas le
                         monde...Nous si.
                         Et avec l'acte le plus quotidien du monde : en buvant le café!
                         Nos cafés 100% biologique des meilleurs producteurs du monde.
@@ -113,7 +116,7 @@
             </div>
 
             <div>
-                <img class=" p-8" src="./assets/images/image_a_propos.jpg" alt="" />
+                <img class=" p-8 " src="./assets/images/image_a_propos.jpg" alt="" />
             </div>
 
         </section>
@@ -151,7 +154,7 @@
                         <p class="text-center cinzel pb-2">5€</p>
                     </div>
                     <!-- Americano -->
-                    <div class="carousel-item md:active:first-line relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
+                    <div class="carousel-item  relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/americano.png"
                         class="block w-full"
@@ -161,7 +164,7 @@
                         <p class="text-center cinzel pb-2">8€</p>
                     </div>
                     <!-- Latte -->
-                    <div class="carousel-item relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
+                    <div class="carousel-item   relative float-left p-4 w-full md:w-1/2 lg:w-1/3">
                         <img
                         src="./assets/images/cafés/latte.png"
                         class="block w-full"
@@ -435,7 +438,7 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </section>
-        <section>
+        <section class="h-full">
             <p>Contact :</p>
             <div class="flex items-center py-1">
                 <i class="fa-solid fa-location-dot pr-2 text-2xl text-center"></i>
@@ -450,7 +453,7 @@
                 <p>shuffle@hello.fr</p>
             </div>
         </section>
-        <p class="text-center">Copyright &copy;2022 All rights reserved</p>
+        <p class="text-center text-sm p-2">Copyright &copy;2022 All rights reserved</p>
     </footer>
 
 <script src="./js/script.js"></script>
