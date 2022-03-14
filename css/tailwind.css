@@ -8,6 +8,7 @@
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    
 
 }
 .backgr {
@@ -47,4 +48,8 @@ input[type=submit]{
 }
 .fa-folder-open{
     color: #D6A581;
+}
+#navbar.scroll{
+    background-color: #2B0B05;
+    padding: 0;
 }
