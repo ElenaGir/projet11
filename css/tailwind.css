@@ -38,6 +38,9 @@ footer{
 input[type=submit]{
     background-color: #2B0B05;
 }
+#btnValider:hover{
+    background-color: #503E3C;
+}
 
 .shadow-custom{
     box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
