@@ -396,25 +396,25 @@
             <img class="lg:w-1/2 h-full float-left" src="./assets/images/bg_form.svg" alt="caf">
             <form method="post" class="p-10 w-full flex-col  md:w-3/4 flex justify-center ">
                 <h2 class="karla font-bold text-2xl sm:text-4xl lx:text-5xl pb-5">CONTACTEZ-NOUS</h2>
-                <div class="">
-                    <input class="w-full h-14 border p-4" placeholder="Entrez votre Nom" name="nom" type="text" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
-                    <p class="invisible">Error</p>
-                </div>
-                <div class="">
-                    <input class="w-full h-14 border pl-2" placeholder="Entez une adresse email valide" name="email" type="email" pattern="[a-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$" required>
-                    <p class="invisible">Error</p>
-                </div>
-                <textarea class=" w-full h-60 border pl-2 pt-2" placeholder="Entrez votre message" name="message" required></textarea>
                 <div>
-                    <p class="invisible">bravo</p>
-                    <input class="text-white px-6 py-2 text-xl float-right" type="submit" value="Envoyer">
+                    <input class="w-full h-14 border p-4" placeholder="Entrez votre Nom" id="inputNom" name="nom" type="text" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
+                    <p id="errorNom" class="invisible text-red-500">Nom non-valide</p>
+                </div>
+                <div>
+                    <input class="w-full h-14 border pl-2" placeholder="Entez une adresse email valide" id="inputEmail" name="email" type="email" pattern="[a-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$" required>
+                    <p id="errorEmail" class="invisible text-red-500">Email non-valide</p>
+                </div>
+                <textarea class=" w-full h-60 border pl-2 pt-2" placeholder="Entrez votre message" id="inputMsg" name="message" required></textarea>
+                <div>
+                    <p id="validMsg" class="invisible "></p>
+                    <input class="text-white px-6 py-2 text-xl float-right" id="btnValider" type="submit" value="Envoyer">
                 </div>
             </form>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="">
+    <footer>
       <section class="footer w-screen h-full flex flex-col justify-between px-10 py-7 text-white text-lg sm:flex-wrap sm:flex-row">
         <section>
             <div class="flex items-center py-1">
@@ -467,6 +467,7 @@
     </footer>
 
 <script src="./js/script.js"></script>
+<script src="./js/form.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 
