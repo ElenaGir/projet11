@@ -1,5 +1,6 @@
 /* Switch display none/flex */
 const btnPlus = document.querySelector('#btnAdd');
+const btnSuppr = document.querySelector('#btnAdd');
 const main = document.querySelector('#boxMain');
 const test = document.querySelector('#test');
 
@@ -30,18 +31,32 @@ inputFile.addEventListener('change', function(){
 const form = document.querySelector("#addBox");
 
 form.addEventListener('submit', function(e){
-  e.preventDefault()
-  let formData = new FormData(form)
-  let url = './php/addBO.php';
-  fetch(url,{
-      method: 'POST',
-      body: formData
-  })
-  .then((response) => {
-      return response.json()
-  })
-  .then((data) => {
-      console.log(data);
-      /* return form.reset(); */
-  })
+    e.preventDefault()
+    let formData = new FormData(form)
+    let url = './php/addBO.php';
+    fetch(url,{
+        method: 'POST',
+        body: formData
+    })
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
 })
+
+
+/* btnSuppr.addEventListener('click', function(){
+    let url = './php/addBO.php';
+    fetch(url,{
+        method: 'POST',
+        body: {'action': clickBtnValue}
+    })
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
+}) */
