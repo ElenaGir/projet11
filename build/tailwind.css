@@ -723,6 +723,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -1068,3 +1072,4 @@ input[type=submit]{
     line-height: 1.75rem;
   }
 }
+

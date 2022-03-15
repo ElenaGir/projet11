@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'projet11';
 $username = 'phpmyadmin';
-$password = 'apache2luxe';
+$password = 'MamaLenaSvetaAlexis258793.';
 
 $sql = "SELECT Noms,Prix,Images FROM Produits INNER JOIN Categories WHERE Sources = id_cat AND Sources = 1";
 $sql2 = "SELECT Noms,Prix,Images FROM Produits INNER JOIN Categories WHERE Sources = id_cat AND Sources = 2";
@@ -206,23 +206,33 @@ try{
         </section>
 
         <!-- Formulaire -->
+      
         <section id="formulaire" class=" w-screen flex flex-col-reverse lg:flex-row h-full justify-center items-center">
             <img class="lg:w-1/2 h-full float-left" src="./assets/images/bg_form.svg" alt="caf">
             <form method="post" class="p-10 w-full flex-col  md:w-3/4  flex justify-center ">
                 <h2 class="karla font-bold text-2xl sm:text-4xl lx:text-5xl pb-5">CONTACTEZ-NOUS</h2>
+               
                 <div>
-                    <input class="w-full h-14 border p-4" placeholder="Entrez votre Nom" id="inputNom" name="nom" type="text" pattern="[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
-                    <p id="errorNom" class="invisible text-red-500">Nom non-valide</p>
+                    <input class="w-full h-14 border p-4" placeholder="Entrez votre Nom" id="inputNom" name="nom" type="text" pattern="[\ a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$" required>
+                    <p id="errorNom" class="invisible text-red-500">ENTREZ LE NOM VALIDE,  S’IL VOUS PLAIT. (ex. Pierre Giraud)</p>
                 </div>
+                
                 <div>
                     <input class="w-full h-14 border pl-2" placeholder="Entez une adresse email valide" id="inputEmail" name="email" type="email" pattern="[a-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,6}$" required>
-                    <p id="errorEmail" class="invisible text-red-500">Email non-valide</p>
+                    <p id="errorEmail" class="invisible text-red-500">ENTREZ LE EMAIL VALID,  S’IL VOUS PLAIT. ( ex. p.giraud@gmail.com)</p>
                 </div>
-                <textarea class=" w-full h-60 border pl-2 pt-2" placeholder="Entrez votre message" id="inputMsg" name="message" required></textarea>
                 <div>
+                <textarea class=" w-full h-60 border pl-2 pt-2" placeholder="Entrez votre message" id="inputMsg" name="message" required></textarea>
+                <p id="errorMsg" class="invisible text-red-500">ENTREZ VOTRE MESSAGE,  S’IL VOUS PLAIT. (le champ ne doit pas être vide)</p>
+            </div>
+               
+                <div class="pt-4">
                     <p id="validMsg" class="invisible "></p>
                     <input class="text-white px-6 py-2 text-xl float-right" id="btnValider" type="submit" value="Envoyer">
                 </div>
+                <!-- <div class="msg">
+                <div class="bb">Merci</div>
+                   </div> -->
             </form>
         </section>
     </main>

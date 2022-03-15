@@ -6,7 +6,7 @@ const form = document.querySelector('form')
 let errorNom = document.querySelector('#errorNom');
 let errorEmail = document.querySelector('#errorEmail');
 let validMsg = document.querySelector('#validMsg');
-const regleNomPrenom = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$/;
+const regleNomPrenom = /^[\ a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$/;
 const regleEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 const regleMessage = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$/;
 
@@ -31,6 +31,7 @@ form.addEventListener('submit', function(e){
 btn.addEventListener('click', function(){
     let resultatNom = regleNomPrenom.test(inputNom.value)
     let resultatEmail = regleEmail.test(inputEmail.value)
+    let resultatdMsg = regleMessage.test(inputMsg.value)
 
     if((resultatNom == true)&&(resultatEmail == true)){
         validMsg.classList.add("flex");
@@ -44,9 +45,16 @@ btn.addEventListener('click', function(){
     if(resultatNom == false){
         errorNom.classList.add("flex");
         errorNom.classList.remove("invisible");
+        inputNom.style.border= '2px solid red';
     }
     if(resultatEmail == false){
         errorEmail.classList.add("flex");
         errorEmail.classList.remove("invisible");
+        inputEmail.style.border= '2px solid red';
+    }
+    if(resultatdMsg == false){
+        errorMsg.classList.add("flex");
+        errorMsg.classList.remove("invisible");
+        inputMsg.style.border= '2px solid red';
     }
 })
