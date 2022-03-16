@@ -69,15 +69,15 @@ try{
                 </li> -->
                     <li class="mr-3">
                         <a class="inline-block lg:text-white text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                            href="#propos">A PROPOS</a>
+                            href="#propos">À PROPOS</a>
                     </li>
                     <li class="mr-3">
                         <a class="inline-block lg:text-white text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                            href="#specialites">SPECIALITES</a>
+                            href="#specialites">SPÉCIALITÉS</a>
                     </li>
                     <li class="mr-3">
                         <a class="inline-block lg:text-white text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                            href="#cafes">NOS CAFES</a>
+                            href="#cafes">NOS CAFÉS</a>
                     </li>
                     <li class="mr-3">
                         <a class="inline-block lg:text-white text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
@@ -121,24 +121,24 @@ try{
         ">
             <div class=" flex flex-col p-8 justify-center items-center">
                 <div class="text-2xl xl:text-5xl ">
-                    <p class="text-amber-900 text-2xl lg:text-5xl">A propos</p>
-                    <p class="text-2xl lg:text-5xl font-bold">The Shuffle</p>
+                    <p class="text-amber-900 text-2xl lg:text-5xl p-4">À propos</p>
+                    <p class="text-2xl lg:text-5xl font-bold p-6">The Shuffle</p>
                 </div>
                 
                 <div>
                     <p class="text-justify italic text-lg xl:text-2xl">Certains pensent qu'on ne changera pas le
                         monde...Nous si.
                         Et avec l'acte le plus quotidien du monde : en buvant le café!
-                        Nos cafés 100% biologique des meilleurs producteurs du monde.
-                        Nos pâtisseries 100% fait maison avec les ingrédients français.
+                        Nos cafés 100% biologiques des meilleurs producteurs du monde.
+                        Nos pâtisseries 100% faite maison avec les ingrédients français.
                         Les amateurs du régime sans sucre et sans lactose trouverons aussi leur bonheur.
-                        Ainsi vous régalant, vous réalisez un acte de bienveillance pour vous et pour la planète.
+                        Ainsi en vous régalant, vous réalisez un acte de bienveillance pour vous et pour la planète.
                     </p>
                 </div>
             </div>
 
             <div>
-                <img class=" p-8 " src="./assets/images/image_a_propos.jpg" alt="" />
+                <img class=" p-10 " src="./assets/images/image_a_propos.jpg" alt="" />
             </div>
 
         </section>
@@ -156,7 +156,7 @@ try{
         text-sm sm:text-lg lg:text-2xl
         ">
 
-            <p class="text-lg sm:text-2xl lg:text-4xl p-8">SPECIALITES</p>
+            <p class="text-lg sm:text-2xl lg:text-4xl p-8">SPÉCIALITÉS</p>
             <P class="p-8">Kopi Luwak (Indonésie)</P>
             <P class="p-8">Blue Mountain (Jamaïque)</P>
             <P class="p-8">Kona Coffee (Hawaï)</P>
@@ -179,16 +179,19 @@ try{
         </section>
 
         <!-- Anecdotes -->
-        <section id="anecdotes" class="w-full p-10 text-lg text-white text-justify">
-            <div class="flex items-center">
-                <img src="./assets/images/coffee.svg" alt="cafe">
-                <h2 class="cinzel text-2xl text-justify">Le saviez-vous ?</h2>
+        <section id="anecdotes" class=" flex w-full p-10 text-lg text-white text-justify justify-center">
+            <div class="flex items-center ">
+                <img class=""src="./assets/images/soucoupe.png" alt="cafe">  
             </div>
-            <p>Le café est la deuxième marchandise la plus échangée dans le monde derrière le pétrole.</p>
-            <p>Le café a un impact positif sur la mémoire à court terme, psychotechnique ainsi que sur le QI. Des études scientifiques ont mis en évidence une corrélation entre ces effets positifs et la quantité consommée de café.</p>
-            <p>Le café le plus cher du monde est produit à partir de baies de café préalablement digérées par des éléphants et récupérées dans leurs excréments. Ce café très prisé coûte aux alentours de 1 000 euros le kilo.</p>
-            <p>Le Brésil est le principal pays producteur du monde, il représente 40 % de la production mondiale de café. Au cours des trois dernières années, le pays a produit chaque année entre 45 et 50 millions de sacs de 60 kg de café.</p>
+            <div class="w-1/2">
+                <h2 class="cinzel text-2xl text-justify">Le saviez-vous ?</h2>
+                <p>Le café est la deuxième marchandise la plus échangée dans le monde derrière le pétrole.</p>
+                <p>Le café a un impact positif sur la mémoire à court terme, psychotechnique ainsi que sur le QI. Des études scientifiques ont mis en évidence une corrélation entre ces effets positifs et la quantité consommée de café.</p>
+                <p>Le café le plus cher du monde est produit à partir de baies de café préalablement digérées par des éléphants et récupérées dans leurs excréments. Ce café très prisé coûte aux alentours de 1 000 euros le kilo.</p>
+                <p>Le Brésil est le principal pays producteur du monde, il représente 40 % de la production mondiale de café. Au cours des trois dernières années, le pays a produit chaque année entre 45 et 50 millions de sacs de 60 kg de café.</p>
+            </div>
         </section>
+
 
         <!-- Carouselle Desserts -->
         <section id="desserts" class="h-full">

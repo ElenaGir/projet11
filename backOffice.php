@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'projet11';
 $username = 'phpmyadmin';
-$password = 'apache2luxe';
+$password = 'MamaLenaSvetaAlexis258793.';
 
 $sql = "SELECT Noms,Prix,Images FROM Produits INNER JOIN Categories WHERE Sources = id_cat AND Sources = 1";
 $sql2 = "SELECT Noms,Prix,Images FROM Produits INNER JOIN Categories WHERE Sources = id_cat AND Sources = 2";

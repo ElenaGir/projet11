@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'projet11';
 $username = 'phpmyadmin';
-$password = 'apache2luxe';
+$password = 'MamaLenaSvetaAlexis258793.';
 
 try{
 	$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
