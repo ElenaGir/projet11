@@ -1,9 +1,5 @@
 <?php
-
-$host = 'localhost';
-$dbname = 'projet11';
-$username = 'phpmyadmin';
-$password = 'apache2luxe';
+include "./php/mdp.php";
 
 try{
 	$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
