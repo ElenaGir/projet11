@@ -1,9 +1,6 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'projet11';
-$username = 'phpmyadmin';
-$password = 'MamaLenaSvetaAlexis258793.';
+include "./php/mdp.php";
 
 $sql = "SELECT Noms,Prix,Images FROM Produits INNER JOIN Categories WHERE Sources = id_cat AND Sources = 1";
 $sql2 = "SELECT Noms,Prix,Images FROM Produits INNER JOIN Categories WHERE Sources = id_cat AND Sources = 2";
