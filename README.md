@@ -3,7 +3,7 @@
 
 ## Description
 Notre projet est un site responsive et dynamique d'un café appelé le **"Shuffle"**.  
-Ce site nous a permis de découvrir le famework **Tailwind** 
+Ce site nous a permis de découvrir le famework **Tailwind**.  
 Le projet contient :
 - La carte du restaurant
 - Un formulaire de contact
