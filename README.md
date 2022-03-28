@@ -7,17 +7,17 @@
 
 
 ## Technos
-HTML
-CSS
-Tailwind
-JavaScript
-PHP
-SQL
-PhpMyAdmin
-Owl Carousel
-Font Awersome
-Figma
-Git / GitHub
+- HTML
+- CSS
+- Tailwind
+- JavaScript
+- PHP
+- SQL
+- PhpMyAdmin
+- Owl Carousel
+- Font Awersome
+- Figma
+- Git / GitHub
 
 ## Misc
 
