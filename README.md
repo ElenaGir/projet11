@@ -14,7 +14,7 @@ Le thème est le café de luxe. Le site est fait sur un fond de couleur blanche,
 Le back office permet d'ajouter, d'éditer ou de supprimer des éléments du menu.
 
 ## Contexte
-Projet collaboratif réalisé durant la formation du *28/02/2022* au *13/03/2022*
+Projet collaboratif réalisé durant la formation de développeur web fullstack du *28/02/2022* au *13/03/2022*
 
 ## Technos
 - HTML
@@ -26,12 +26,11 @@ Projet collaboratif réalisé durant la formation du *28/02/2022* au *13/03/2022
 #### Librairie :
 - Owl Carousel
 - Font Awersome
-#### Misc :
+#### Divers :
 - Figma
 - Git / GitHub
 
-## Misc
-
+## Divers
 Collaborateurs :
 [Elena GIRARD](https://github.com/ElenaGir)
 
