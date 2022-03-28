@@ -30,7 +30,7 @@ Projet collaboratif réalisé durant la formation de développeur web fullstack 
 - Figma
 - Git / GitHub
 
-## Divers
+## À propos
 Collaborateurs :
 [Elena GIRARD](https://github.com/ElenaGir)
 
@@ -38,7 +38,6 @@ Lien du site :
 www.pas_encore_en_ligne.cheh
 
 ## Licence
-
 do What The Fuck you want to Public License
 
 Version 1.0, March 2022
