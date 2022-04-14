@@ -22,7 +22,8 @@ if (isset($_GET['id_prod']) && !empty($_GET['id_prod'])) {
 <?php include 'include_header.php' ?>
 
 <div class="justify-center">
-    <form id="addBox" action="handler_project-add.php" method="post" class=" bg-custom w-64 h-96 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
+    <form id="addBox" action="handler_project-edit.php" method="post" class=" bg-custom w-64 h-96 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
+        <input type="hidden" name="project_id" value='<?= $result['id_prod'] ?>'>
         <div id="preview">
             <div id="boxFile" class="rounded-full w-24 h-24 border-2 border-white bg-white"></div>
         </div>
@@ -33,8 +34,8 @@ if (isset($_GET['id_prod']) && !empty($_GET['id_prod'])) {
             </label>
             <input id="fileAdd" type="file" class="opacity-0 absolute top-0" name="data_img" accept=".png,.jpg jpeg,svg">
         </div>
-        <input class="border rounded placeholder:pl-2 pl-2" type="text" name="data_name" placeholder="Nom">
-        <input class="border rounded placeholder:pl-2 pl-2" type="text" name="data_price" placeholder="Prix">
+        <input class="border rounded placeholder:pl-2 pl-2" type="text" name="data_name" placeholder="Nom" value="<?=$result['Noms']?>">
+        <input class="border rounded placeholder:pl-2 pl-2" type="text" name="data_price" placeholder="Prix" value="<?=$result['Prix']?>">
         <div class="flex justify-center items-center">
             <input type="radio" name="data_src" id="cafe" value="1">
             <label class="pl-2" for="cafe">Café</label>
@@ -44,5 +45,7 @@ if (isset($_GET['id_prod']) && !empty($_GET['id_prod'])) {
         <button type="submit" class="border rounded hover:bg-slate-100 shadow-md px-4 py-1">Valider</button>
     </form>
 </div>
+
+<script src="../js/scriptBO.js"></script>
 
 <?php include 'include_footer.php' ?>  

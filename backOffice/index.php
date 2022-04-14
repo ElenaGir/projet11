@@ -22,6 +22,8 @@
         <div>
             <p><?= $project['Noms'] ?></p>
             <p><?= $project['Prix'] ?>€</p>
+        </div>
+        <div>
             <a class="shadow-md border mt-2 mr-2 px-4 py-1 rounded-md hover:bg-slate-100" href="form_project-edit.php?id_prod=<?= $project['id_prod'] ?>">Modifier</a>
             <a class="shadow-md border px-4 py-1 rounded-md hover:bg-slate-100" href="handler_project-delete.php?id_prod=<?= $project['id_prod'] ?>">Supprimer</a>
         </div>

@@ -24,4 +24,6 @@
     </form>
 </div>
 
+<script src="../js/scriptBO.js"></script>
+
 <?php include 'include_footer.php' ?> 
