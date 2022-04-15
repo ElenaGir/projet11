@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost';
-$dbname = 'projet11';
-$username = 'phpmyadmin';
-$password = '1234';
+$host = "localhost";
+$dbname = "projet11";
+$username = "phpmyadmin";
+$password = "apache2luxe";
