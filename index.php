@@ -24,13 +24,14 @@ try{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/f5e209f987.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 
 <body>
-    <header class="bg-header  flex-col justify-center h-screen items-center sm:h-5/6 xl:h-screen ">
+    <header class="bg-header  flex-col justify-center h-screen items-center sm:h-5/6 xl:h-screen">
         <!-- background img/video -->
         <section class="hero-wrapper -z-50 w-screen sm:bg-hidden h-screen  fixed">
             <div class="backgr img  h-full sm:hidden"></div>
@@ -42,9 +43,13 @@ try{
 
         <!-- barre nav -->
         <nav id="navbar" class="flex items-center justify-between flex-wrap bg-hidden p-6 fixed w-full z-10 top-0">
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <div class="flex items-center flex-shrink-0 text-white ">
                 <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-                    <span class=" cinzel text-2xl pl-2 sm:text-4xl xl:text-6xl"><i class="em em-grinning"></i>Shuffle café</span>
+                    <p class=" cinzel text-2xl  sm:text-4xl xl:text-6xl">
+                        
+                    <!-- <i class="em em-grinning"> -->
+
+                        </i>Shuffle café</p>
                 </a>
             </div>
 
@@ -64,7 +69,7 @@ try{
                     <!-- <li class="mr-3">
                   <a class="inline-block py-2 px-4 text-white no-underline" href="#"></a>
                 </li> -->
-                    <li class="mr-3">
+                    <li class="">
                         <a class="inline-block lg:text-white text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                             href="#propos">À PROPOS</a>
                     </li>
@@ -117,9 +122,9 @@ try{
         items-center
         ">
             <div class=" flex flex-col p-8 justify-center items-center">
-                <div class="text-2xl xl:text-5xl ">
-                    <p class="text-amber-900 text-2xl lg:text-5xl p-4">À propos</p>
-                    <p class="text-2xl lg:text-5xl font-bold p-6">The Shuffle</p>
+                <div class="text-2xl xl:text-5xl flex flex-col justify-center items-center">
+                    <p class="text-amber-900 text-2xl lg:text-5xl mb-4">À propos</p>
+                    <p class="text-2xl lg:text-5xl font-bold mb-4">The Shuffle</p>
                 </div>
                 
                 <div>
@@ -176,16 +181,23 @@ try{
         </section>
 
         <!-- Anecdotes -->
-        <section id="anecdotes" class=" flex w-full p-10 text-lg text-white text-justify justify-center">
-            <div class="flex items-center ">
-                <img class=""src="./assets/images/soucoupe.png" alt="cafe">  
+        <section id="anecdotes" class="w-full  text-lg text-white text-justify flex flex-col justify-center items-center md:flex-row ">
+            
+             <div id="anim" class="flex justify-center items-center ">
+                <img id ="soucoupe" class="w-64 lg:w-96"src="./assets/images/soucoupe.png" alt="soucoupe de tasse animée"> 
+                <img id ="tasse" class="w-44 lg:w-64 "src="./assets/images/tasse.png" alt="tasse avec cafee animée"> 
+               
             </div>
-            <div class="w-1/2">
-                <h2 class="cinzel text-2xl text-justify">Le saviez-vous ?</h2>
-                <p>Le café est la deuxième marchandise la plus échangée dans le monde derrière le pétrole.</p>
-                <p>Le café a un impact positif sur la mémoire à court terme, psychotechnique ainsi que sur le QI. Des études scientifiques ont mis en évidence une corrélation entre ces effets positifs et la quantité consommée de café.</p>
-                <p>Le café le plus cher du monde est produit à partir de baies de café préalablement digérées par des éléphants et récupérées dans leurs excréments. Ce café très prisé coûte aux alentours de 1 000 euros le kilo.</p>
-                <p>Le Brésil est le principal pays producteur du monde, il représente 40 % de la production mondiale de café. Au cours des trois dernières années, le pays a produit chaque année entre 45 et 50 millions de sacs de 60 kg de café.</p>
+            
+            <div class=" md:w-5/6 p-10 flex flex-col justify-center items-center">
+                <h2 class="cinzel text-2xl md:text-3xl lg:text-5xl text-justify mb-6" >Le saviez-vous ?</h2>
+                 <p id = "lettre"class="tx cinzel text-3xl font-bold lg: text-5xl"><span>C</span><span>O</span><span>F</span><span>F</span><span>E</span><span>E</span></p> 
+                    <div class=" md:text-lg lg:text-2xl">
+                        <p>Le café est la deuxième marchandise la plus échangée dans le monde derrière le pétrole.</p>
+                        <p>Le café a un impact positif sur la mémoire à court terme, psychotechnique ainsi que sur le QI. Des études scientifiques ont mis en évidence une corrélation entre ces effets positifs et la quantité consommée de café.</p>
+                        <p>Le café le plus cher du monde est produit à partir de baies de café préalablement digérées par des éléphants et récupérées dans leurs excréments. Ce café très prisé coûte aux alentours de 1 000 euros le kilo.</p>
+                        <p>Le Brésil est le principal pays producteur du monde, il représente 40 % de la production mondiale de café. Au cours des trois dernières années, le pays a produit chaque année entre 45 et 50 millions de sacs de 60 kg de café.</p>
+                    </div>
             </div>
         </section>
 
@@ -239,7 +251,7 @@ try{
 
     <!-- Footer -->
     <footer>
-      <section class="footer w-screen h-full flex flex-col justify-between px-10 py-7 text-white text-lg sm:flex-wrap sm:flex-row">
+      <section class="footer w-screen h-full flex flex-col justify-between px-10 py-7 text-white text-lg sm:flex-wrap sm:flex-row  mb-0 ">
         <section>
             <div class="flex items-center py-1">
                 <i class="fa-brands fa-github pr-2 text-2xl"></i>

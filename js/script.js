@@ -36,3 +36,24 @@ $(document).ready(function(){
         }
     });
 });
+window.addEventListener('scroll', () =>{
+    if(window.scrollY > 1850){
+        var tl = gsap.timeline({repeat: 0, repeatDelay: 1});
+
+        tl
+          .addLabel("soucoupeAndtasse")
+          //start both of these animations at the same time, at the "greyAndPink" label.
+          .to("#soucoupe", {duration: 1, x: 100 }, "soucoupeAndtasse") 
+          .to("#tasse", {duration: 1, x: -110, rotation: 720}, "soucoupeAndtasse");
+        
+          if(document.querySelector("body").clientWidth > "1023" ){
+            gsap.to("#soucoupe", {duration: 1, x: 150 }, "soucoupeAndtasse"); 
+            gsap.to("#tasse", {duration: 1, x: -160, rotation: 720}, "soucoupeAndtasse"); 
+        
+          }   
+    }
+
+} )
+
+
+
