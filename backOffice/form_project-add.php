@@ -1,7 +1,7 @@
 <?php include 'include_header.php' ?>
 
 <div id="test" class="justify-center">
-    <form id="addBox" action="handler_project-add.php" method="post" class=" bg-custom w-64 h-96 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
+    <form id="addBox" action="handler_project-add.php" method="post" enctype="multipart/form-data" class=" bg-custom w-64 h-96 mx-3 mt-5 mb-2 border-2 rounded-xl flex flex-col items-center justify-evenly text-center">
         <div id="preview">
             <div id="boxFile" class="rounded-full w-24 h-24 border-2 border-white bg-white"></div>
         </div>
