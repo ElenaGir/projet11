@@ -60,9 +60,9 @@ input[type=submit]{
     background-color: #2B0B05;
     padding: 0;
 }
-/* ---animation lettres fumées */
+/* ---animation lettres fumées */ 
 
-/* #lettre{
+ #lettre{
   display: inline-block;
   text-shadow: 0 0 0 whitesmoke;
   animation: smoky 15s 13s both;
@@ -95,6 +95,6 @@ input[type=submit]{
      text-shadow: 0 0 20px whitesmoke;
     opacity: 0;
   }
-} */
+}
 
   

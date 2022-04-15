@@ -183,7 +183,7 @@ try{
         <!-- Anecdotes -->
         <section id="anecdotes" class="w-full  text-lg text-white text-justify flex flex-col justify-center items-center md:flex-row ">
             
-             <div id="anim" class="flex justify-center items-center ">
+             <div id="anim" class="flex justify-center items-center mt-4">
                 <img id ="soucoupe" class="w-64 lg:w-96"src="./assets/images/soucoupe.png" alt="soucoupe de tasse animée"> 
                 <img id ="tasse" class="w-44 lg:w-64 "src="./assets/images/tasse.png" alt="tasse avec cafee animée"> 
                
@@ -299,7 +299,7 @@ try{
             </div>
         </section>
     </section>
-        <div class="text-center  p-2 mb-2 text-white text-xs sm:text-sm xl:text-xl ">Copyright &copy;2022 All rights reserved</div>
+        <div class="text-center  text-white text-xs sm:text-sm xl:text-xl ">Copyright &copy;2022 All rights reserved</div>
     </footer>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="./js/script.js"></script>

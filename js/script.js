@@ -1,19 +1,19 @@
+//opacité barre de navigation
 document.getElementById('nav-toggle').onclick = function(){
-    
     document.getElementById("nav-content").classList.toggle("hidden");
 }
-const nav = document.querySelector('#navbar');
 
+const nav = document.querySelector('#navbar');
 window.addEventListener('scroll', () => {
     if(window.scrollY > 150){
         nav.classList.add('scroll');
-
     }
     else{
         nav.classList.remove('scroll');
-    }
-    
+    }    
 });
+
+// animation carousel
 $(document).ready(function(){
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -36,9 +36,13 @@ $(document).ready(function(){
         }
     });
 });
+
+// animation tasse-soucoupe
 window.addEventListener('scroll', () =>{
-    if(window.scrollY > 1850){
-        var tl = gsap.timeline({repeat: 0, repeatDelay: 1});
+    
+    if(window.scrollY > 1300){
+        var tl = gsap.timeline({repeat: 0, repeatDelay: 1
+        });
 
         tl
           .addLabel("soucoupeAndtasse")
@@ -52,8 +56,7 @@ window.addEventListener('scroll', () =>{
         
           }   
     }
-
-} )
+})
 
 
 
