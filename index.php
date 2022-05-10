@@ -42,33 +42,26 @@ try{
         </section>
 
         <!-- barre nav -->
-        <nav id="navbar" class="flex items-center justify-between flex-wrap bg-hidden p-6 fixed w-full z-10 top-0">
+        <nav id="navbar" class="flex items-center justify-around flex-wrap bg-hidden fixed w-full z-10 pt-4 p-0">
             <div class="flex items-center flex-shrink-0 text-white ">
                 <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
                     <p class=" cinzel text-2xl  sm:text-4xl xl:text-6xl">
-                        
-                    <!-- <i class="em em-grinning"> -->
-
                         </i>Shuffle café</p>
                 </a>
             </div>
 
             <div class="block lg:hidden">
-                <button id="nav-toggle"
-                    class="flex items-center px-3 py-2  text-white border-amber-500 hover:text-amber-900 hover:border-amber-900">
+                <button id="nav-toggle" class="flex items-center text-white border-amber-500 hover:text-amber-900 hover:border-amber-900">
                     <svg class="fill-current h-8 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        <path d = "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                     </svg>
                 </button>
             </div>
 
-            <div class="w-screen flex-grow h-screen sm:h-auto lg:flex lg:items-center lg:w-auto hidden  pt-6 lg:pt-0  bg-white text-2xl text-black lg:bg-transparent lg:text-base lg:text-white"
-                id="nav-content">
+            <div class="w-screen flex-grow h-screen sm:h-auto lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0  bg-white text-2xl text-black lg:bg-transparent lg:text-base lg:text-white" id="nav-content">
                 <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                    <!-- <li class="mr-3">
-                  <a class="inline-block py-2 px-4 text-white no-underline" href="#"></a>
-                </li> -->
+             
                     <li class="">
                         <a class="inline-block lg:text-white text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                             href="#propos">À PROPOS</a>

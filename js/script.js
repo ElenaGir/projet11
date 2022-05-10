@@ -1,8 +1,13 @@
-//opacité barre de navigation
-document.getElementById('nav-toggle').onclick = function(){
-    document.getElementById("nav-content").classList.toggle("hidden");
-}
+// barre  de nav
+const bourger =  document.getElementById('nav-toggle');
+const content = document.getElementById("nav-content");
+bourger.addEventListener('click', function(){
+    content.classList.toggle("hidden");
+   
+    
+})
 
+//opacité barre de navigation
 const nav = document.querySelector('#navbar');
 window.addEventListener('scroll', () => {
     if(window.scrollY > 150){
@@ -40,16 +45,18 @@ $(document).ready(function(){
 // animation tasse-soucoupe
 window.addEventListener('scroll', () =>{
     
-    if(window.scrollY > 1300){
-        var tl = gsap.timeline({repeat: 0, repeatDelay: 1
+    if(window.scrollY > 1950){
+
+        var tl = gsap.timeline({repeat: 1, repeatDelay: 1
         });
 
         tl
           .addLabel("soucoupeAndtasse")
-          //start both of these animations at the same time, at the "greyAndPink" label.
-          .to("#soucoupe", {duration: 1, x: 100 }, "soucoupeAndtasse") 
-          .to("#tasse", {duration: 1, x: -110, rotation: 720}, "soucoupeAndtasse");
-        
+          if(document.querySelector("body").clientWidth <= "1023" ){
+            gsap.to("#soucoupe", {duration: 1, x: 100 }, "soucoupeAndtasse") 
+            gsap.to("#tasse", {duration: 1, x: -110, rotation: 720}, "soucoupeAndtasse");
+          }
+          
           if(document.querySelector("body").clientWidth > "1023" ){
             gsap.to("#soucoupe", {duration: 1, x: 150 }, "soucoupeAndtasse"); 
             gsap.to("#tasse", {duration: 1, x: -160, rotation: 720}, "soucoupeAndtasse"); 
