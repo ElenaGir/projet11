@@ -3,14 +3,21 @@ const bourger =  document.getElementById('nav-toggle');
 const content = document.getElementById("nav-content");
 bourger.addEventListener('click', function(){
     content.classList.toggle("hidden");
-   
+    content.style.display = "flex";
+     
+})
+content.addEventListener('click', function(){
+    if(document.querySelector("body").clientWidth < "1023" ){
+        content.style.display = "none";
+    }
     
+
 })
 
 //opacité barre de navigation
 const nav = document.querySelector('#navbar');
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 150){
+    if(window.scrollY >= 150){
         nav.classList.add('scroll');
     }
     else{
