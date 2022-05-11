@@ -52,7 +52,7 @@ $(document).ready(function(){
 // animation tasse-soucoupe
 window.addEventListener('scroll', () =>{
     
-    if(window.scrollY > 1950){
+    if((window.scrollY > 1750)){
 
         var tl = gsap.timeline({repeat: 1, repeatDelay: 1
         });

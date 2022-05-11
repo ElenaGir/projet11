@@ -158,7 +158,7 @@ try{
             <P class="p-8">Le Bourbon Pointu (La Réunion)</P>
         </section>
 
-        <!-- Carouselle Cafés -->
+        <!-- Carousel Cafés -->
         <section id="cafes" class="h-full">
             <h2 class="cinzel text-xl sm:text-2xl lg:text-6xl p-4">Nos cafés</h2>
             <div class="owl-carousel">
@@ -195,7 +195,7 @@ try{
         </section>
 
 
-        <!-- Carouselle Desserts -->
+        <!-- Carousel Desserts -->
         <section id="desserts" class="h-full">
             <h2 class="cinzel text-xl p-4  sm:text-2xl lg:text-6xl ">Nos desserts</h2>
             <div class="owl-carousel">
