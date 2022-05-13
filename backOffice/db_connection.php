@@ -1,9 +1,9 @@
 <?php
 
 $db_servername = "localhost";
-$db_dbname = "projet11";
-$db_username = "phpmyadmin";
-$db_password = "apache2luxe";
+$db_dbname = "elenag_restaurant";
+$db_username = "elenag";
+$db_password = "lWHc6JturQnO3A==";
 
 try {
     $db = new PDO("mysql:host=$db_servername;dbname=$db_dbname", $db_username, $db_password);

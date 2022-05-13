@@ -1,5 +1,5 @@
 <?php
 $host = "localhost";
-$dbname = "projet11";
-$username = "phpmyadmin";
-$password = "1234";
+$dbname = "elenag_restaurant";
+$username = "elenag";
+$password = "lWHc6JturQnO3A==";

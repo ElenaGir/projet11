@@ -841,16 +841,25 @@ body{
 }
 
 #specialites{
-  background: url("../assets/images/specialites.jpg") center no-repeat;
+  background: url("../assets/images/specialites.webp") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .backgr {
-  background: url("../assets/images/tasse_cafe_table.jpg") center no-repeat;
+  background: url("../assets/images/tasse_cafe_table.webp") center no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
 }
 
 #anecdotes{
