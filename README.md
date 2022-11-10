@@ -32,7 +32,7 @@ Projet collaboratif réalisé durant la formation de développeur web fullstack 
 
 ## À propos
 Collaborateurs :
-[August Gros](https://github.com/Ogust25
+[August Gros](https://github.com/Ogust25)
 
 Lien du site :
 https://elenag.promo-106.codeur.online/projet11/
