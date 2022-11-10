@@ -32,10 +32,10 @@ Projet collaboratif réalisé durant la formation de développeur web fullstack 
 
 ## À propos
 Collaborateurs :
-[Elena GIRARD](https://github.com/ElenaGir)
+[August Gros](https://github.com/Ogust25
 
 Lien du site :
-www.pas_encore_en_ligne.cheh
+https://elenag.promo-106.codeur.online/projet11/
 
 ## Licence
 do What The Fuck you want to Public License
